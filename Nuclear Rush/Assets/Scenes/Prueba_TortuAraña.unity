@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0337b8637e9cfbc4f9c3e51ca47ff925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 4
+  velocidad: 7
   velocidadInicial: 0
 --- !u!114 &862217858
 MonoBehaviour:
@@ -321,9 +321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plataforma1:
   - {fileID: 1763232818780225934, guid: 77a213e2b9c07314da58b817ddd2607a, type: 3}
-  - {fileID: 1763232818780225934, guid: 656de0e3838288c4186e7fc54b244e5f, type: 3}
-  - {fileID: 1763232818780225934, guid: e732a5156a1abdd45ae278fda0e53e02, type: 3}
-  - {fileID: 1763232818780225934, guid: 03a6af4c474379d4d82db075cf4998d5, type: 3}
+  - {fileID: 1763232818780225934, guid: 5e522823e82ddb24db95d665c4b71874, type: 3}
   plataforma2:
   - {fileID: 1763232818780225934, guid: 77a213e2b9c07314da58b817ddd2607a, type: 3}
   - {fileID: 1763232818780225934, guid: 656de0e3838288c4186e7fc54b244e5f, type: 3}
@@ -334,6 +332,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  Transicion:
+  - {fileID: 1763232818780225934, guid: 5e522823e82ddb24db95d665c4b71874, type: 3}
   PuntoInicial: 76
   modulosPreTransformacion: 6
 --- !u!54 &862217859
