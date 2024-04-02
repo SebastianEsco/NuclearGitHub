@@ -131,11 +131,11 @@ GameObject:
   - component: {fileID: 192408386}
   m_Layer: 0
   m_Name: Salto
-  m_TagString: Untagged
+  m_TagString: TriggerSalto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &192408384
 Transform:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 192408383}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.023, z: 0}
+  m_LocalPosition: {x: 0, y: -0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -258,8 +258,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.9, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.9000001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -414,8 +414,8 @@ Transform:
   m_GameObject: {fileID: 400599548}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0.86, z: 0}
-  m_LocalScale: {x: 0.7485502, y: 0.7485502, z: 0.7485502}
+  m_LocalPosition: {x: -3, y: 1.274, z: 0}
+  m_LocalScale: {x: 0.7485502, y: 1.4773387, z: 0.7485502}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 192408384}
@@ -429,9 +429,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400599548}
   serializedVersion: 4
-  m_Mass: 6
-  m_Drag: 1
-  m_AngularDrag: 0.2
+  m_Mass: 10
+  m_Drag: 3
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -489,8 +489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0337b8637e9cfbc4f9c3e51ca47ff925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 4
-  velocidadInicial: 0
+  velocidad: 3
+  velocidadInicial: 4
 --- !u!114 &400599556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,7 +503,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247afacf139b014469abab41c29eb818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuerzaSalto: 40
+  cantidadQueVaria: 2
+  velocidadDeRecuperacion: 0.2
+  fuerzaSalto: 125
   puedeSaltar: 1
 --- !u!1 &410087039
 GameObject:
@@ -593,7 +595,7 @@ Transform:
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -2.7, y: 3, z: -1.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -725,8 +727,8 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
+  - {fileID: 330585546}
   - {fileID: 400599552}
   - {fileID: 2115938867}
   - {fileID: 602436371}
