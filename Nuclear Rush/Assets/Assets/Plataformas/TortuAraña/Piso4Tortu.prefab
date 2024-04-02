@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5272083785700538693}
   - component: {fileID: 1025948673055901903}
   m_Layer: 0
-  m_Name: Piso1Tortu
+  m_Name: Piso4Tortu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ Transform:
   m_GameObject: {fileID: 2066865100189281299}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.4, y: 3.4, z: -0.13306382}
+  m_LocalPosition: {x: -4.1, y: 2.9, z: -0.13306382}
   m_LocalScale: {x: 4.1189637, y: 1, z: 0.75020736}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -187,7 +187,7 @@ Transform:
   m_GameObject: {fileID: 2324801852097571326}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.04, y: 2.81, z: -0.13306382}
+  m_LocalPosition: {x: 27.04, y: 3.6, z: -0.13306382}
   m_LocalScale: {x: 9.351292, y: 1, z: 0.75020736}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -294,7 +294,7 @@ Transform:
   m_GameObject: {fileID: 4157276108760037252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.17, y: 7.41, z: -0.13306382}
+  m_LocalPosition: {x: 12.4, y: 6, z: -0.13306382}
   m_LocalScale: {x: 9.351292, y: 1, z: 0.75020736}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -508,8 +508,8 @@ Transform:
   m_GameObject: {fileID: 5258939828915194067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.1, y: 9.2, z: -0.13306382}
-  m_LocalScale: {x: 4.1189637, y: 1, z: 0.75020736}
+  m_LocalPosition: {x: -15.3, y: 6, z: -0.13306382}
+  m_LocalScale: {x: 6.375332, y: 1, z: 0.92253}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5272083785700538693}
