@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     Piso piso;
     Rigidbody rb;
     public float fuerzaSalto;
+    public bool puedeSaltar = true;
     private void Start()
     {
         piso = GetComponent<Piso>();
@@ -41,9 +42,20 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W)&& puedeSaltar)
         {
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode.Impulse);
+            puedeSaltar = false;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        puedeSaltar = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        puedeSaltar = false;
     }
 }
