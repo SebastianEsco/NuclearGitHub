@@ -334,7 +334,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  PuntoInicial: 17
+  PuntoInicial: 76
   modulosPreTransformacion: 6
 --- !u!54 &862217859
 Rigidbody:
@@ -459,6 +459,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1025948673055901903, guid: 77a213e2b9c07314da58b817ddd2607a,
+        type: 3}
+      propertyPath: tiempoDeDestruccion
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1763232818780225934, guid: 77a213e2b9c07314da58b817ddd2607a,
         type: 3}
       propertyPath: m_Name
@@ -545,59 +550,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77a213e2b9c07314da58b817ddd2607a, type: 3}
---- !u!1 &1350455292
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1350455294}
-  - component: {fileID: 1350455293}
-  m_Layer: 0
-  m_Name: Trigger
-  m_TagString: Trigger
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1350455293
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350455292}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 5.5855346, z: 2.9870214}
-  m_Center: {x: 0, y: 2.2927673, z: -0.032720983}
---- !u!4 &1350455294
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350455292}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1585069692
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,4 +675,3 @@ SceneRoots:
   - {fileID: 1585069694}
   - {fileID: 862217863}
   - {fileID: 1335202801}
-  - {fileID: 1350455294}
