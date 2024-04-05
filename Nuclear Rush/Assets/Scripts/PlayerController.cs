@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    bool antiDobleSalto;
     Vector3 posicionInicial;
     Piso piso;
     Rigidbody rb;
@@ -15,11 +17,14 @@ public class PlayerController : MonoBehaviour
         piso = GetComponent<Piso>();
         rb = GetComponent<Rigidbody>();
         posicionInicial = transform.position;
+        antiDobleSalto = true;
     }
 
+    
 
     void Update()
     {
+
         Vector3 posicion = transform.position;
         
 
@@ -47,9 +52,12 @@ public class PlayerController : MonoBehaviour
             piso.velocidad = piso.velocidadInicial;
         }
 
-        RaycastHit hit; //Castear Rasho laser
-        if (Physics.Raycast(transform.position, -Vector3.up, out hit, 1f, 1)) //Tirar el rayo para abajo
+        //Castear Rasho laser
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, -Vector3.up, out hit, 0.75f, 1) && antiDobleSalto) //Tirar el rayo para abajo
         {
+            antiDobleSalto = false;
+            Invoke("AntiDobleSalto", 0.1f);
             puedeSaltar = true; //Si le está pegando al suelo, puede saltar
         }
         
@@ -59,11 +67,17 @@ public class PlayerController : MonoBehaviour
             puedeSaltar = false;
         }
 
-
+        //Recuperar posiciòn Inicial de a poquito
         if(transform.position.x < posicionInicial.x)
         {
             transform.position = new Vector3(posicion.x + (velocidadDeRecuperacion * Time.deltaTime), posicion.y, posicion.z);
         }
     }
+
+    public void AntiDobleSalto()
+    {
+        antiDobleSalto = true;
+    }
+    
 
 }
