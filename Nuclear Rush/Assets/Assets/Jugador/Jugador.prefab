@@ -66,7 +66,6 @@ GameObject:
   - component: {fileID: 4973773058335808580}
   - component: {fileID: 6584052935243841727}
   - component: {fileID: 3837747925395484727}
-  - component: {fileID: 559749218601737869}
   - component: {fileID: 8948740389899233601}
   - component: {fileID: 9026200361305244468}
   m_Layer: 0
@@ -192,35 +191,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &559749218601737869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4735169947961900235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8499efba96e3d644dba91d8bd4131c6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plataforma1:
-  - {fileID: 2378673110721355736, guid: efdbb6362f764fc4889959ba4b001019, type: 3}
-  - {fileID: 3248922849602113021, guid: 8b507d99b4ce098409c7e7547d6617dd, type: 3}
-  - {fileID: 7942008147776790971, guid: c2086feb7f710d74b9681e79e3532031, type: 3}
-  - {fileID: 4099054128189582862, guid: 7d65758b2570e0747aa664c60f8c9a66, type: 3}
-  plataforma2:
-  - {fileID: 7706058823304537747, guid: 2f2568379baf52448b15061663261bcc, type: 3}
-  - {fileID: 7156181050111054744, guid: ee05acde236c93949954222354aa425b, type: 3}
-  - {fileID: 3448133931129117841, guid: 2d29a1430245ca349a1ba79f08b7488b, type: 3}
-  - {fileID: 4251050461626636062, guid: 637b3c4be1c31e54aab8aef80f9dc02c, type: 3}
-  plataforma3:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  PuntoInicial: 17
-  modulosPreTransformacion: 6
 --- !u!114 &8948740389899233601
 MonoBehaviour:
   m_ObjectHideFlags: 0
