@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3837747925395484727}
   - component: {fileID: 8948740389899233601}
   - component: {fileID: 9026200361305244468}
+  - component: {fileID: 1639435657295161156}
+  - component: {fileID: 1693626928726309535}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -143,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247afacf139b014469abab41c29eb818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugando: 0
+  vivo: 0
   posicionInicial: {x: 0, y: 0, z: 0}
   cantidadQueVaria: 2
   velocidadDeRecuperacion: 0.3
@@ -151,6 +155,30 @@ MonoBehaviour:
   tiempoDeDeslizamiento: 0.75
   hitBoxParado: {fileID: 8130547525794299439}
   hitBoxSentado: {fileID: 9044835433205991154}
+--- !u!114 &1639435657295161156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735169947961900235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a60dd878f5c4ae4cbab9232f50a959a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1693626928726309535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735169947961900235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd0889c761e79b4eb35cfed9ba7ba8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8130547525794299439
 GameObject:
   m_ObjectHideFlags: 0

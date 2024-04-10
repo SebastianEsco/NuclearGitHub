@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public bool jugando, vivo; //vivo es literalmente para usar todo. Jugando es para hacer ciertas acciones antes de dejar de estar vivo.
     bool antiDobleSalto;
     [SerializeField] Vector3 posicionInicial;
     Piso piso;
@@ -18,6 +20,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float tiempoDeDeslizamiento;
     public GameObject hitBoxParado, hitBoxSentado;
 
+
+    //Acido
+    bool muriendoEnAcido;
+
     private void Start()
     {
         piso = GetComponent<Piso>();
@@ -25,20 +31,44 @@ public class PlayerController : MonoBehaviour
         antiDobleSalto = true;
         puedeDeslizarse = true;
         hitBoxSentado.SetActive(false);
+        jugando = true;
+        vivo = true;
     }
 
     
 
     void Update()
     {
+        if (vivo)
+        {
+            if (jugando)
+            {
+                Acelerando();
 
-        Acelerando();
+                Saltar();
 
-        Saltar();
+                RecuperarPosicionInicial();
 
-        RecuperarPosicionInicial();
-
-        Deslizarse();
+                Deslizarse();
+            }
+            else if (!jugando && muriendoEnAcido)
+            {
+                hitBoxParado.SetActive(false);
+                hitBoxSentado.SetActive(false);
+                rb.useGravity = false;
+                if(piso.velocidad > 0)
+                {
+                    piso.velocidad -= 0.01f * Time.deltaTime;
+                }
+                
+                transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f * Time.deltaTime, transform.position.z);
+            }
+        }
+        else
+        {
+            piso.velocidad = 0;
+        }
+        
 
     }
 
@@ -69,6 +99,8 @@ public class PlayerController : MonoBehaviour
             piso.velocidad = piso.velocidadInicial;
         }
     }
+
+    
 
     public void Saltar()
     {
@@ -129,6 +161,34 @@ public class PlayerController : MonoBehaviour
             puedeDeslizarse = true;
         }
 
+    } //Deslizar
+
+
+
+    //----ACIDO----
+    public void VelocidadEnAcido()
+    {
+        piso.velocidad = 0.1f;
+    }
+
+    public void VelocidadFueraDeAcido()
+    {
+        piso.velocidad = piso.velocidadInicial;
+    }
+
+    public void SecuenciaDeMuerteEnAcido()
+    {
+        muriendoEnAcido = true;
+        jugando = false;
+        Invoke("PantallaDeMuerte", 5); 
+        //Activar Animación de muerte en acido
+        
+    }
+
+    public void PantallaDeMuerte() //De momento lo coloco en este script pero sería bueno ponerlo en otro lado para no saturar este
+    {
+        vivo = false;
+        Debug.Log("Murió :(");
     }
 
 

@@ -16,12 +16,24 @@ public class GestionadorDePlataformas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numeroModulos = plataforma1.Length;
+        
     }
 
     public GameObject EscogerPlataforma()
     {
-        
+        if(moduloActual == 0)
+        {
+            numeroModulos = plataforma1.Length;
+        }
+        else if(moduloActual == 1)
+        {
+            numeroModulos = plataforma2.Length;
+        }
+        else if(moduloActual == 2)
+        {
+            numeroModulos = plataforma3.Length;
+        }
+
         GameObject plataformaEscogida = null;
 
         aleatorio = Random.Range(0, numeroModulos); //Escoger numero aleatorio
@@ -42,28 +54,14 @@ public class GestionadorDePlataformas : MonoBehaviour
         {
             plataformaEscogida = plataforma2[aleatorio];
         }
-        //if (moduloActual == 2)
+        if (moduloActual == 2)
         {
-            //plataformaEscogida = plataforma3[aleatorio];
+            plataformaEscogida = plataforma3[aleatorio];
         }
 
         contadorDeModulosPasados++;
 
         return plataformaEscogida;
     }
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Trigger"))
-        {
-            
-            Debug.Log("Colicion");
-            Debug.Log(contadorDeModulosPasados);
-
-            
-
-            
-        }
-
-
-    }
+   
 }

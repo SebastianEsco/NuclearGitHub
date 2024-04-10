@@ -27,7 +27,7 @@ public class Generador : MonoBehaviour
     {
         if(transform.position.x < 17 && !instanciado)
         {
-            Debug.Log("Instanciando");
+            Debug.Log("------ Nueva Plataforma -------");
             plataforma = gestionador.EscogerPlataforma();
             Instantiate(plataforma, transform.position, Quaternion.identity);
             instanciado = true;

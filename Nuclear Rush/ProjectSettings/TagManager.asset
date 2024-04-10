@@ -6,14 +6,16 @@ TagManager:
   tags:
   - Trigger
   - TriggerSalto
+  - Acido
+  - GameOver
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Jugador
   - Water
   - UI
-  - 
+  - SoloInteractuaConJugador
   - 
   - 
   - 

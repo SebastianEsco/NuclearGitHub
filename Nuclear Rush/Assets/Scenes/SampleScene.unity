@@ -167,15 +167,19 @@ MonoBehaviour:
   - {fileID: 7695342879987132429, guid: 136b94349dfdbf34ea2034108a5b3e77, type: 3}
   - {fileID: 749665689671012564, guid: 209530546dd86004f89aa328b16b8952, type: 3}
   - {fileID: 749665689671012564, guid: aea22f11e5ea20b4d9fb9e2d26053585, type: 3}
-  - {fileID: 749665689671012564, guid: aea22f11e5ea20b4d9fb9e2d26053585, type: 3}
-  - {fileID: 749665689671012564, guid: aea22f11e5ea20b4d9fb9e2d26053585, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
   plataforma2:
   - {fileID: 749665689671012564, guid: aea22f11e5ea20b4d9fb9e2d26053585, type: 3}
   - {fileID: 749665689671012564, guid: aea22f11e5ea20b4d9fb9e2d26053585, type: 3}
-  - {fileID: 749665689671012564, guid: aea22f11e5ea20b4d9fb9e2d26053585, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
+  - {fileID: 1648373439983262283, guid: 580d2b0d5a61ea649b72101734166a9b, type: 3}
   plataforma3:
   - {fileID: 0}
-  moduloDeTransformacion: {fileID: 749665689671012564, guid: 209530546dd86004f89aa328b16b8952,
+  moduloDeTransformacion: {fileID: 7695342879987132429, guid: 136b94349dfdbf34ea2034108a5b3e77,
     type: 3}
   modulosPreTransformacion: 5
 --- !u!1 &330585543
@@ -432,6 +436,59 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1552780290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1552780293}
+  - component: {fileID: 1552780292}
+  m_Layer: 6
+  m_Name: GameOver
+  m_TagString: GameOver
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1552780292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552780290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.45356435, y: 2.012654, z: 2.0035737}
+  m_Center: {x: -0.273218, y: 0.5063257, z: -0.015545006}
+--- !u!4 &1552780293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552780290}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.95, y: 0.9218146, z: -0.09}
+  m_LocalScale: {x: 2.4142, y: 2.4142, z: 2.4142}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2395454312924479188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,6 +615,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jugador
       objectReference: {fileID: 0}
+    - target: {fileID: 4735169947961900235, guid: 3c3887a24d04ff242b9dcfadf4923c4e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130547525794299439, guid: 3c3887a24d04ff242b9dcfadf4923c4e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8948740389899233601, guid: 3c3887a24d04ff242b9dcfadf4923c4e,
         type: 3}
       propertyPath: velocidadInicial
@@ -572,6 +639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: posicionInicial.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044835433205991154, guid: 3c3887a24d04ff242b9dcfadf4923c4e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9044835433205991154, guid: 3c3887a24d04ff242b9dcfadf4923c4e,
         type: 3}
@@ -671,3 +743,4 @@ SceneRoots:
   - {fileID: 67393048}
   - {fileID: 2395454312924479188}
   - {fileID: 6509607585433837608}
+  - {fileID: 1552780293}
