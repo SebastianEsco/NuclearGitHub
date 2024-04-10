@@ -11,7 +11,7 @@ public class MovimientoPiso : MonoBehaviour
     private GameObject player;
     void Start()
     {
-        player = GameObject.Find("Jugador");
+        player = GameObject.Find("MonoAraña"); // la etiqueta cambia dependiendo del personaje, ¿ como puedo hacer para cambiarla automaticamente?
         piso = player.GetComponent<Piso>();
     }
 
