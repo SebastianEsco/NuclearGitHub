@@ -14,9 +14,10 @@ public class FueraDeMapa : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("TOCO EL TRIGGER GAMEOVER");
+        
         if (other.CompareTag("GameOver"))
         {
+            Debug.Log("TOCO EL TRIGGER GAMEOVER");
             controller.vivo = false;
         }
     }

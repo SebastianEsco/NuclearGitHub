@@ -9,7 +9,7 @@ public class Generador : MonoBehaviour
     private GameObject gestionadorObjeto;
     GameObject plataforma;
 
-    private bool instanciado;
+    public bool instanciado;
 
     public void Update()
     {
