@@ -567,9 +567,10 @@ GameObject:
   - component: {fileID: 1451833493}
   - component: {fileID: 1451833492}
   - component: {fileID: 1451833491}
+  - component: {fileID: 1451833499}
   m_Layer: 0
   m_Name: "MonoAra\xF1a"
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,10 +622,7 @@ MonoBehaviour:
   - {fileID: 1763232818780225934, guid: 77a213e2b9c07314da58b817ddd2607a, type: 3}
   - {fileID: 1763232818780225934, guid: 5e522823e82ddb24db95d665c4b71874, type: 3}
   plataforma2:
-  - {fileID: 1763232818780225934, guid: 77a213e2b9c07314da58b817ddd2607a, type: 3}
-  - {fileID: 1763232818780225934, guid: 656de0e3838288c4186e7fc54b244e5f, type: 3}
-  - {fileID: 1763232818780225934, guid: e732a5156a1abdd45ae278fda0e53e02, type: 3}
-  - {fileID: 1763232818780225934, guid: 03a6af4c474379d4d82db075cf4998d5, type: 3}
+  - {fileID: 1763232818780225934, guid: c3a3c9f99a46cb84bb4cf4c3a1af9e5c, type: 3}
   plataforma3:
   - {fileID: 0}
   - {fileID: 0}
@@ -750,6 +748,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451833499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451833490}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc993d71ae5d1a7448f3cb924fbb5ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerzaSalto: 0
+  velocidadCaida: 3
+  velocidadSubida: 5
 --- !u!1 &1585069692
 GameObject:
   m_ObjectHideFlags: 0
