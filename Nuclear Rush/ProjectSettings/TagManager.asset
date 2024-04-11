@@ -5,16 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trigger
-  - Transicion
-  - residuo
+  - TriggerSalto
+  - Acido
+  - GameOver
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Jugador
   - Water
   - UI
-  - 
+  - SoloInteractuaConJugador
   - 
   - 
   - 

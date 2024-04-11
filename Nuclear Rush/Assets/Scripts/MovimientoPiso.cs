@@ -6,7 +6,7 @@ public class MovimientoPiso : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float puntoFinal;
+    public float puntoDeDestruccion;
     Piso piso;
     private GameObject player;
     void Start()
@@ -20,7 +20,7 @@ public class MovimientoPiso : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x - piso.velocidad * Time.deltaTime, 0f, 0f);
 
-        if(transform.position.x <= puntoFinal)
+        if(transform.position.x <= puntoDeDestruccion)
         {
             Destroy(gameObject);
         }
